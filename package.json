@@ -1,0 +1,53 @@
+{
+  "name": "g-detector",
+  "version": "0.1.5",
+  "description": "A powerful JavaScript library to detect the letter G",
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsup",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "check": "biome format .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Superchupu",
+  "license": "ISC",
+  "keywords": [
+    "gasbot",
+    "detector",
+    "h"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h-projects/g-detector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/h-projects/g-detector/issues"
+  },
+  "homepage": "https://github.com/h-projects/g-detector#readme",
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.3",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.57.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.3.1"
+  },
+  "engines": {
+    "node": ">=15.0.0"
+  },
+  "packageManager": "pnpm@8.15.4"
+}
