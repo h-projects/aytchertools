@@ -1,11 +1,9 @@
 # aytchertools
 
-Something
+Aytch Software's H tools
 
 ## Usage
 
 ```js
-import { detect } from 'g-detector';
-
-detect('g', 'medium');
+// TODO
 ```

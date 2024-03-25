@@ -1,14 +1,15 @@
 {
-  "name": "g-detector",
-  "version": "0.1.5",
-  "description": "A powerful JavaScript library to detect the letter G",
+  "name": "aytchertools",
+  "version": "0.1.0",
+  "description": "Aytch Software's H tools",
   "scripts": {
     "test": "vitest run",
     "build": "tsup",
+    "check": "biome check .",
+    "check:apply": "biome check --apply .",
+    "format": "biome format --write .",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "check": "biome format .",
-    "format": "biome format --write .",
     "typecheck": "tsc --noEmit"
   },
   "main": "dist/index.js",
@@ -22,32 +23,35 @@
   "files": [
     "dist"
   ],
-  "author": "Superchupu",
+  "author": "Aytch Software",
   "license": "ISC",
   "keywords": [
-    "gasbot",
-    "detector",
+    "aytch-software",
     "h"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/h-projects/g-detector.git"
+    "url": "git+https://github.com/h-projects/aytchertools.git"
   },
   "bugs": {
-    "url": "https://github.com/h-projects/g-detector/issues"
+    "url": "https://github.com/h-projects/aytchertools/issues"
   },
-  "homepage": "https://github.com/h-projects/g-detector#readme",
+  "homepage": "https://github.com/h-projects/aytchertools#readme",
   "devDependencies": {
-    "@biomejs/biome": "^1.5.3",
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
+    "@biomejs/biome": "^1.6.2",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
     "eslint": "^8.57.0",
     "tsup": "^8.0.2",
-    "typescript": "^5.3.3",
-    "vitest": "^1.3.1"
+    "typescript": "^5.4.3",
+    "vitest": "^1.4.0"
   },
   "engines": {
     "node": ">=15.0.0"
   },
-  "packageManager": "pnpm@8.15.4"
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "packageManager": "pnpm@8.15.5"
 }
